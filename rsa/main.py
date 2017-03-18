@@ -25,7 +25,7 @@ while True:
         continue
 
     if userIn == 1:
-        keys = Keygen.keygen()
+        keys = keygen.keygen()
 
         print("*** Keypairs ***")
         print("- Private Key:   (N={},d={})".format(keys.private.RSA,
