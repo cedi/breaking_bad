@@ -40,11 +40,11 @@ while True:
         else:
             question = "Please enter private key: "
 
-        Key = RSAInputParser.InputParser(input(question))
+        Key = input_parser.InputParser(input(question))
 
         if userIn == 2:
             message = input("Please enter the plaintext message: ")
-            encrypted = Crypt.encrypt(Key.N, Key.exp, message)
+            encrypted = crypt.encrypt(Key.N, Key.exp, message)
             print("Encrypted: {}".format(encrypted))
         else:
             message = input("Please enter the encrypted message: ")
